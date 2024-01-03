@@ -1,0 +1,6 @@
+player3:
+  isOpen: true
+player2:
+  isOpen: false
+player1:
+  isOpen: true

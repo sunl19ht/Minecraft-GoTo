@@ -1,0 +1,8 @@
+name: GoTo
+version: '${version}'
+main: com.sunl19ht.GoTo
+api-version: '1.20'
+commands:
+  goto:
+    description: "GoTo 传送插件" # 描述
+    permission: goto.player # Player玩家权限
