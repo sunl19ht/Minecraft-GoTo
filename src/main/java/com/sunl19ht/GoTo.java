@@ -64,10 +64,9 @@ public final class GoTo extends JavaPlugin {
         Yaml yaml = new Yaml(options);
 
         // 将数据写入YAML文件
-        try (FileWriter writer = new FileWriter("F:\\Minecraft\\1.20.1Server\\plugins\\GoTo\\config.yml")) {
+        try (FileWriter writer = new FileWriter(System.getProperty("user.dir") + "\\plugins\\GoTo\\config.yml")) {
             yaml.dump(data, writer);
             writer.flush();
-            System.out.println("Write YAML file successful.");
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -24,8 +24,8 @@ public class MyEventListener implements Listener {
         HashMap<Player, HashMap<String, Boolean>> playerData = GlobalPlayerData.getInstance().getPlayerData();
         HashMap<String, Boolean> hashMap = new HashMap<>();
 
-        HashMap<String, Object> readData = readYamlFile("F:\\Minecraft\\1.20.1Server\\plugins\\GoTo\\config.yml");
-
+        HashMap<String, Object> readData = readYamlFile(System.getProperty("user.dir") + "\\plugins\\GoTo\\config.yml");
+        System.out.println(System.getProperty("user.dir") + "\\plugins\\GoTo\\config.yml");
         if (readData.get(event.getPlayer().getName()) != null) {
             String openTp = readData.get(event.getPlayer().getName()).toString();
             if(openTp.contains("true")) {
@@ -50,10 +50,6 @@ public class MyEventListener implements Listener {
             // 将YAML文件内容解析为Map
             Yaml yaml = new Yaml();
             HashMap<String, Object> data = yaml.load(new String(fileContent));
-
-            // 打印Map内容
-            System.out.println("Read YAML file content:");
-            System.out.println(data);
             return data;
         } catch (IOException e) {
             e.printStackTrace();
