@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EnumTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-03T14:18:42" hostname="LAPTOP-AINQ4LAB" time="0.036">
-  <properties/>
-  <testcase name="Test" classname="EnumTest" time="0.036"/>
-  <system-out><![CDATA[Read YAML file content:
-{isOpen=true}
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
